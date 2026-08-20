@@ -12,5 +12,5 @@ const medicineSchema = new mongoose.Schema({
   quantity: { type: Number, default: 0 },
   pharmacy: { type: mongoose.Schema.Types.ObjectId, ref: 'Pharmacy', required: true },
 })
-
+/* ending the model definition */
 export default mongoose.model('Medicine', medicineSchema)
