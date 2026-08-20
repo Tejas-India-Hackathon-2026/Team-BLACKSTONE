@@ -1,5 +1,5 @@
 import express from 'express' /* g*/
-import bcrypt from 'bcryptjs'
+import bcrypt from 'bcryptjs'/*by helping tools */
 import jwt from 'jsonwebtoken'
 import Pharmacy from '../models/Pharmacy.js'
 import { JWT_SECRET } from '../utils/auth.js'
