@@ -15,7 +15,7 @@ router.get('/', async (req, res) => {
     res.status(500).json({ error: err.message })
   }
 })
-
+//get your medicine easier faster by root
 // GET all applications regardless of status (admin console)
 router.get('/all', requireAdmin, async (req, res) => {
   try {
