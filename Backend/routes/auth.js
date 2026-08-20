@@ -15,7 +15,8 @@ router.post('/login', async (req, res) => {
 
     const ok = await bcrypt.compare(password, pharmacy.passwordHash)
     if (!ok) return res.status(401).json({ error: 'Invalid email or password' })
-
+    // Generate JWT token for the owner
+  // Generate JWT token for the owner
     const token = jwt.sign({ role: 'owner', pharmacyId: pharmacy._id }, JWT_SECRET, {
       expiresIn: '7d',
     })
