@@ -68,7 +68,7 @@ router.get('/search', async (req, res) => {
     res.status(500).json({ error: err.message })
   }
 })
-
+// GET /:id — get one medicine by ID (public)
 // POST add a new medicine — owner only, forced to their own pharmacy
 router.post('/', requireOwner, async (req, res) => {
   try {
